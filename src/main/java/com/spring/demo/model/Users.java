@@ -8,10 +8,13 @@ import lombok.Data;
 
 @Data
 @Entity
-public class User {
+public class Users {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Integer id;
+    private  String email;
+    private  String country_code;
+    private  String  mobile;
     private  String full_name;
     private Boolean  attendance;
 }
